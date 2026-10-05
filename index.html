@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pétalos Eternos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light" style="font-family: 'Fredoka', sans-serif;">
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo Pétalos Eternos" width="80" height="80" class="img-fluid">
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#historia">
+                        Nosotras
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">
+                        Preguntas
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabla.html">
+                        Clientes
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<section class="py-5" id="inicio">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+
+                <h1 class="display-2 fw-bold text-danger mb-4">
+                    Flores de
+                    <br>
+                    <span>Limpiapipas</span>
+                </h1>
+
+                <div class="alert alert-info shadow-sm mb-3" role="alert">
+                    🌸 <strong>Información:</strong>
+                    En Pétalos Eternos creamos flores de limpiapipas hechas a mano con mucho cariño y dedicación.
+                </div>
+
+                <div class="alert alert-success shadow-sm mb-4" role="alert">
+                    💗 <strong>Oferta especial:</strong>
+                    Obtén un <strong>15% de descuento</strong> en determinados productos de Pétalos Eternos durante este mes.
+                </div>
+
+                <p class="lead mb-4">
+                    Cada flor está hecha cuidadosamente con limpiapipas suaves y coloridos.
+                    <br><br>
+                    Son un regalo eterno, delicado y perfecto para decorar cualquier espacio.
+                </p>
+
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="catalogo.html" class="btn btn-danger btn-lg shadow">
+                        Ver catálogo
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div id="carruselFlores"
+                     class="carousel slide shadow-lg rounded-3 overflow-hidden"
+                     data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="logo.png"
+                                 class="d-block w-100"
+                                 alt="Ramo personalizado de flores">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="tulipanescuadrado.png"
+                                 class="d-block w-100"
+                                 alt="Tulipanes de limpiapipas">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="margaritacuadrada.png"
+                                 class="d-block w-100"
+                                 alt="Margaritas de limpiapipas">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="ROSASCUADRADAS.png"
+                                 class="d-block w-100"
+                                 alt="Rosas de limpiapipas">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="macetacuadrada.png"
+                                 class="d-block w-100"
+                                 alt="Maceta de flores">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carruselFlores"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carruselFlores"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                    <div class="carousel-indicators">
+
+                        <button type="button"
+                                data-bs-target="#carruselFlores"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Imagen 1">
+                        </button>
+
+                        <button type="button"
+                                data-bs-target="#carruselFlores"
+                                data-bs-slide-to="1"
+                                aria-label="Imagen 2">
+                        </button>
+
+                        <button type="button"
+                                data-bs-target="#carruselFlores"
+                                data-bs-slide-to="2"
+                                aria-label="Imagen 3">
+                        </button>
+
+                        <button type="button"
+                                data-bs-target="#carruselFlores"
+                                data-bs-slide-to="3"
+                                aria-label="Imagen 4">
+                        </button>
+
+                        <button type="button"
+                                data-bs-target="#carruselFlores"
+                                data-bs-slide-to="4"
+                                aria-label="Imagen 5">
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="py-5" id="catalogo">
+    <div class="container">
+
+        <h2 class="text-center display-6 fw-semibold text-danger mb-5">
+            🌸 Nuestras colecciones 🌸
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 shadow h-100">
+
+                    <div class="ratio ratio-4x3">
+                        <img src="RECTANGULARESTULIPANES.png"
+                             class="object-fit-cover"
+                             alt="Tulipanes pastel">
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Tulipanes Pastel
+                        </h5>
+
+                        <p class="text-danger fw-bold fs-5">
+                            $6.990
+                        </p>
+
+                        <a href="catalogo.html" class="btn btn-outline-danger">
+                            Comprar
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 shadow h-100">
+
+                    <div class="ratio ratio-4x3">
+                        <img src="margaritarectangular.png"
+                             class="object-fit-cover"
+                             alt="Margaritas">
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Margaritas
+                        </h5>
+
+                        <p class="text-danger fw-bold fs-5">
+                            $5.990
+                        </p>
+
+                        <a href="catalogo.html" class="btn btn-outline-danger">
+                            Comprar
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 shadow h-100">
+
+                    <div class="ratio ratio-4x3">
+                        <img src="ROSARECTANGULAR.png"
+                             class="object-fit-cover"
+                             alt="Rosas de limpiapipas">
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Rosas de Pipa
+                        </h5>
+
+                        <p class="text-danger fw-bold fs-5">
+                            $7.990
+                        </p>
+
+                        <a href="catalogo.html" class="btn btn-outline-danger">
+                            Comprar
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 shadow h-100">
+
+                    <div class="ratio ratio-4x3">
+                        <img src="RECTANGULARESMACETAS.png"
+                             class="object-fit-cover"
+                             alt="Maceta cute">
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Maceta Cute
+                        </h5>
+
+                        <p class="text-danger fw-bold fs-5">
+                            $6.990
+                        </p>
+
+                        <a href="catalogo.html" class="btn btn-outline-danger">
+                            Comprar
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="catalogo.html" class="btn btn-danger btn-lg shadow">
+                Ver catálogo completo →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-5 bg-white" id="historia">
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-5 text-center">
+                <img src="logo.png"
+                     class="img-fluid rounded-3 shadow-lg"
+                     alt="Pétalos Eternos">
+            </div>
+
+            <div class="col-lg-7">
+
+                <div class="p-4">
+
+                    <h2 class="display-6 fw-semibold text-danger mb-4">
+                        Nuestra Historia 💗
+                    </h2>
+
+                    <p>
+                        Pétalos Eternos nació con el sueño de convertir un simple limpiapipas en un detalle inolvidable.
+                    </p>
+
+                    <p>
+                        Cada flor está hecha completamente a mano, pensando en regalar sonrisas y crear recuerdos que duren para siempre.
+                    </p>
+
+                    <p>
+                        Nos encanta crear flores únicas para cumpleaños, aniversarios, graduaciones y cualquier momento especial.
+                    </p>
+
+                    <div class="d-flex align-items-center">
+
+                        <span class="fs-1 me-3">
+                            🌷
+                        </span>
+
+                        <p class="mb-0">
+                            Flores hechas con cariño, especialmente para ti.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+
+        <div class="row g-4 text-center">
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card border-0 shadow h-100">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            🌸
+                        </div>
+
+                        <h5>
+                            Hecho a mano
+                        </h5>
+
+                        <p class="mb-0">
+                            Cada flor es única.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card border-0 shadow h-100">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            🚚
+                        </div>
+
+                        <h5>
+                            Envíos
+                        </h5>
+
+                        <p class="mb-0">
+                            A todo Chile.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card border-0 shadow h-100">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            🎁
+                        </div>
+
+                        <h5>
+                            Empaques bonitos
+                        </h5>
+
+                        <p class="mb-0">
+                            Listos para regalar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="contacto" class="bg-dark text-white py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <h3>
+                    🌸 Pétalos Eternos
+                </h3>
+
+                <p>
+                    Flores de limpiapipas hechas con amor.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h4>
+                    Navegación
+                </h4>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2">
+                        <a href="index.html" class="text-white text-decoration-none">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="catalogo.html" class="text-white text-decoration-none">
+                            Catálogo
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="index.html#historia" class="text-white text-decoration-none">
+                            Nosotras
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="preguntas.html" class="text-white text-decoration-none">
+                            Preguntas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html" class="text-white text-decoration-none">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h4>
+                    Contáctanos
+                </h4>
+
+                <p>
+                    📷 @petaloseternos
+                </p>
+
+                <p>
+                    📱 +56 9 1234 5678
+                </p>
+
+                <p>
+                    ✉ contacto@petaloseternos.cl
+                </p>
+
+                <a href="contacto.html" class="btn btn-outline-light">
+                    Ir al formulario de contacto
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 Pétalos Eternos - Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

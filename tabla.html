@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Clientes - Pétalos Eternos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff0f6;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .titulo {
+            color: #d96b9b;
+            font-weight: 700;
+        }
+
+        .tabla-contenedor {
+            background-color: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+        }
+
+        .tabla-clientes {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .tabla-clientes thead th {
+            background-color: #d96b9b;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            padding: 15px;
+            border: 2px solid white;
+        }
+
+        .tabla-clientes thead th:nth-child(1) {
+            background-color: #a855a8;
+        }
+
+        .tabla-clientes thead th:nth-child(2) {
+            background-color: #d96b9b;
+        }
+
+        .tabla-clientes thead th:nth-child(3) {
+            background-color: #e88bb5;
+        }
+
+        .tabla-clientes thead th:nth-child(4) {
+            background-color: #c77dba;
+        }
+
+        .tabla-clientes thead th:nth-child(5) {
+            background-color: #b565a7;
+        }
+
+        .tabla-clientes tbody td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 12px;
+        }
+
+        .tabla-clientes tbody tr:nth-child(even) {
+            background-color: #fff5fa;
+        }
+
+        .tabla-clientes tbody tr:hover {
+            background-color: #ffe1ee;
+        }
+
+        .volver {
+            background-color: #d96b9b;
+            color: white;
+            border: none;
+        }
+
+        .volver:hover {
+            background-color: #b94f7d;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png"
+                 alt="Logo Pétalos Eternos"
+                 width="80"
+                 height="80"
+                 class="img-fluid">
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#historia">
+                        Nosotras
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">
+                        Preguntas
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="tabla.html">
+                        Clientes
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h1 class="display-5 titulo">
+                🌸 Lista de clientes 🌸
+            </h1>
+
+            <p class="lead text-secondary">
+                Registro de clientes y sus ocupaciones
+            </p>
+
+        </div>
+
+        <div class="tabla-contenedor">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered tabla-clientes mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nombre completo</th>
+                            <th>Correo electrónico</th>
+                            <th>Ciudad o Comuna</th>
+                            <th>Rol / Ocupación / Especialidad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Camila González Pérez</td>
+                            <td>camila.gonzalez@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Diseñadora gráfica</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Martina Rodríguez Soto</td>
+                            <td>martina.rodriguez@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Javiera Martínez Díaz</td>
+                            <td>javiera.martinez@gmail.com</td>
+                            <td>La Unión</td>
+                            <td>Enfermera</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Antonia Pérez Muñoz</td>
+                            <td>antonia.perez@gmail.com</td>
+                            <td>Paillaco</td>
+                            <td>Profesora</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Sofía Hernández Soto</td>
+                            <td>sofia.hernandez@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Administradora</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Valentina Silva Torres</td>
+                            <td>valentina.silva@gmail.com</td>
+                            <td>Osorno</td>
+                            <td>Veterinaria</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Fernanda Morales Rojas</td>
+                            <td>fernanda.morales@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Emprendedora</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>Daniela Castro Pérez</td>
+                            <td>daniela.castro@gmail.com</td>
+                            <td>Corral</td>
+                            <td>Contadora</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Isidora Fuentes Vargas</td>
+                            <td>isidora.fuentes@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Fotógrafa</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Emilia Ramírez Soto</td>
+                            <td>emilia.ramirez@gmail.com</td>
+                            <td>Máfil</td>
+                            <td>Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td>Florencia Navarro Díaz</td>
+                            <td>florencia.navarro@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Psicóloga</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>Constanza Reyes Muñoz</td>
+                            <td>constanza.reyes@gmail.com</td>
+                            <td>Los Lagos</td>
+                            <td>Ingeniera</td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td>Agustina Vargas Silva</td>
+                            <td>agustina.vargas@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Arquitecta</td>
+                        </tr>
+
+                        <tr>
+                            <td>14</td>
+                            <td>Trinidad Espinoza Pérez</td>
+                            <td>trinidad.espinoza@gmail.com</td>
+                            <td>Río Bueno</td>
+                            <td>Abogada</td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td>Josefa Contreras Rojas</td>
+                            <td>josefa.contreras@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Chef</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td>Maite Sandoval Díaz</td>
+                            <td>maite.sandoval@gmail.com</td>
+                            <td>La Unión</td>
+                            <td>Periodista</td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td>Renata Cárdenas Soto</td>
+                            <td>renata.cardenas@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>18</td>
+                            <td>Agustina Molina Pérez</td>
+                            <td>agustina.molina@gmail.com</td>
+                            <td>Paillaco</td>
+                            <td>Educadora</td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td>Martina Vásquez Rojas</td>
+                            <td>martina.vasquez@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Community Manager</td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td>Laura Paredes Muñoz</td>
+                            <td>laura.paredes@gmail.com</td>
+                            <td>Osorno</td>
+                            <td>Ingeniera comercial</td>
+                        </tr>
+
+                        <tr>
+                            <td>21</td>
+                            <td>Nicole Álvarez Soto</td>
+                            <td>nicole.alvarez@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Enfermera</td>
+                        </tr>
+
+                        <tr>
+                            <td>22</td>
+                            <td>Carolina Méndez Díaz</td>
+                            <td>carolina.mendez@gmail.com</td>
+                            <td>Corral</td>
+                            <td>Artesana</td>
+                        </tr>
+
+                        <tr>
+                            <td>23</td>
+                            <td>Amparo Bustamante Pérez</td>
+                            <td>amparo.bustamante@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Diseñadora</td>
+                        </tr>
+
+                        <tr>
+                            <td>24</td>
+                            <td>Agustina Salazar Rojas</td>
+                            <td>agustina.salazar@gmail.com</td>
+                            <td>Máfil</td>
+                            <td>Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>25</td>
+                            <td>Francisca León Soto</td>
+                            <td>francisca.leon@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Administradora</td>
+                        </tr>
+
+                        <tr>
+                            <td>26</td>
+                            <td>Ignacia Bravo Muñoz</td>
+                            <td>ignacia.bravo@gmail.com</td>
+                            <td>Los Lagos</td>
+                            <td>Nutricionista</td>
+                        </tr>
+
+                        <tr>
+                            <td>27</td>
+                            <td>María José Torres Pérez</td>
+                            <td>maria.torres@gmail.com</td>
+                            <td>Valdivia</td>
+                            <td>Emprendedora</td>
+                        </tr>
+
+                        <tr>
+                            <td>28</td>
+                            <td>Valeria Campos Rojas</td>
+                            <td>valeria.campos@gmail.com</td>
+                            <td>La Unión</td>
+                            <td>Profesora</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                <a href="index.html" class="btn volver px-4 py-2">
+                    ← Volver al inicio
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+```
